@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/ish.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="main">
+        <div class="table">
+            <h3>21472 orders(15 await processing)</h3>
+            <table>
+                <thead>
+                    <tr class="thead">
+                        <th><input type="checkbox" onclick="toggle(this)"></th>
+                        <th>Order no.</th>
+                        <th>Country</th>
+                        <th>Client</th>
+                        <th>State</th>
+                        <th>Quant.</th>
+                        <th>Total price</th>
+                        <th>Warrantly ext.</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" name="de"></td>
+                        <td>3607019</td>
+                        <td>United States</td>
+                        <td>Ashley Cole</td>
+                        <td>To be processed</td>
+                        <td>1</td>
+                        <td>$395.50</td>
+                        <td>x</td>
+                        <td>Feb 14,2021, 10:25:36</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="de"></td>
+                        <td>3607019</td>
+                        <td>United States</td>
+                        <td>Ashley Cole</td>
+                        <td>To be processed</td>
+                        <td>1</td>
+                        <td>$395.50</td>
+                        <td>x</td>
+                        <td>Feb 14,2021, 10:25:36</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}
+

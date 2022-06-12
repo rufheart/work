@@ -1,0 +1,13 @@
+{% load static %}
+
+<div>
+    <div>
+        {% if user.is_authenticated %}
+            <div><a href="{% url 'profile' %}"></a></div>
+            <div><a href="{% url 'logout' %}"></a></div>
+        {% else %}
+            <div><a href="{% url 'login' %}">Login</a></div>
+            <div><a href="{% url 'register' %}"></a></div>
+        {% endif %}
+    </div>
+</div>
