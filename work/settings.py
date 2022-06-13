@@ -45,6 +45,9 @@ INSTALLED_APPS = [
     #myapps
     'home',
     'account',
+
+    #other
+    'rest_framework',
 ]
 
 

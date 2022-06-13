@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+
 {% load static %}
 
 {% block style %}
@@ -12,7 +13,7 @@
             <table>
                 <thead>
                     <tr class="thead">
-                        <th><input type="checkbox" onclick="toggle(this)"></th>
+                        <th><input type="checkbox" onclick="func1(this)" id="tt" class="checkbox"></th>
                         <th>Order no.</th>
                         <th>Country</th>
                         <th>Client</th>
@@ -50,5 +51,10 @@
             </table>
         </div>
     </div>
+
+
 {% endblock %}
 
+{% block js %}
+    <script src="{% static 'js/ish.js' %}"></script>
+{% endblock %}
